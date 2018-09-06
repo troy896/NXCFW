@@ -1,0 +1,21 @@
+[submodule "ReiNX"]
+	path = ReiNX
+	url = https://github.com/Reisyukaku/ReiNX.git
+[submodule "JKSV"]
+	path = JKSV
+	url = https://github.com/J-D-K/JKSV.git
+	branch = master
+[submodule "NX-Shell"]
+	path = NX-Shell
+	url = https://github.com/joel16/NX-Shell.git
+	branch = gh-pages
+[submodule "hbmenu"]
+	path = hbmenu
+	url = https://github.com/switchbrew/nx-hbmenu.git
+[submodule "hbloader"]
+	path = hbloader
+	url = https://github.com/switchbrew/nx-hbloader.git
+[submodule "Tinfoil"]
+	path = Tinfoil
+	url = https://github.com/Adubbz/Tinfoil.git
+	branch = master
