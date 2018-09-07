@@ -33,10 +33,10 @@ cp /d/Github/NXCFW/ReiNX/NX_Sysmodules/creport/Makefile /d/Github/NXCFW/ReiNX/NX
 cp /d/Github/NXCFW/Essentials/ReiNX.diff /d/Github/NXCFW/ReiNX/patch.diff
 cp /d/Github/NXCFW/Essentials/Modules.diff /d/Github/NXCFW/ReiNX/NX_Sysmodules/patch.diff
 cd /d/Github/NXCFW/ReiNX
-git apply patch.diff
+patch -p1 --binary < patch.diff
 cd /d/Github/NXCFW/ReiNX/NX_Sysmodules
-git apply patch.diff
-cd ..
+patch -p1 --binary < patch.diff
+cd /d/Github/NXCFW/ReiNX
 make
 cp /d/Github/NXCFW/ReiNX/out/ReiNX.bin /d/Github/NXCFW/build/ReiNX.bin
 cp /d/Github/NXCFW/ReiNX/out/ReiNX/splash.bin /d/Github/NXCFW/build/ReiNX/splash.bin
