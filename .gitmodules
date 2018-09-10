@@ -19,7 +19,3 @@
 	path = Tinfoil
 	url = https://github.com/Adubbz/Tinfoil.git
 	branch = master
-[submodule "appstorenx"]
-	path = appstorenx
-	url = https://github.com/vgmoose/appstorenx.git
-	branch = master
