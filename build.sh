@@ -23,9 +23,9 @@ mkdir ReiNX/titles/010000000000100D/exefs
 mkdir ReiNX/titles/0100000000000036
 mkdir ReiNX/titles/0100000000000036/exefs
 
-
+cd /d/Github/NXCFW/build/switch/Toolkit
+wget http://builds.reinx.guide/toolkit/ReiNX_Toolkit-latest.nro
 cp /d/Github/NXCFW/NX-Shell/NX-Shell.nro /d/Github/NXCFW/build/switch/NX-Shell/NX-Shell.nro
-cp /d/Github/NXCFW/Essentials/Toolkit.nro /d/Github/NXCFW/build/switch/Toolkit/Toolkit.nro
 cp /d/Github/NXCFW/Essentials/splash.jpg /d/Github/NXCFW/build/splashes/splash.jpg
 cp /d/Github/NXCFW/ReiNX/NX_Sysmodules/Makefile /d/Github/NXCFW/ReiNX/NX_Sysmodules/Makefile.bak
 cp /d/Github/NXCFW/ReiNX/Makefile /d/Github/NXCFW/ReiNX/Makefile.bak
