@@ -19,3 +19,6 @@
 	path = Tinfoil
 	url = https://github.com/Adubbz/Tinfoil.git
 	branch = master
+[submodule "ReiNXToolkit"]
+	path = ReiNXToolkit
+	url = https://github.com/Reisyukaku/ReiNXToolkit.git
