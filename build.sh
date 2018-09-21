@@ -9,11 +9,11 @@ mkdir switch
 mkdir switch/tinfoil
 mkdir switch/NX-Shell
 mkdir switch/JKSV
-mkdir switch/Toolkit
-mkdir switch/appstore
+mkdir switch/ReiNXToolkit
 mkdir tinfoil
 mkdir tinfoil/nsp
-mkdir splashes
+mkdir Toolkit
+mkdir Toolkit/splashes
 mkdir ReiNX
 mkdir ReiNX/sysmodules
 mkdir ReiNX/patches
@@ -23,10 +23,14 @@ mkdir ReiNX/titles/010000000000100D/exefs
 mkdir ReiNX/titles/0100000000000036
 mkdir ReiNX/titles/0100000000000036/exefs
 
-cd /d/Github/NXCFW/build/switch/Toolkit
-wget http://builds.reinx.guide/toolkit/ReiNX_Toolkit-latest.nro
 cp /d/Github/NXCFW/NX-Shell/NX-Shell.nro /d/Github/NXCFW/build/switch/NX-Shell/NX-Shell.nro
-cp /d/Github/NXCFW/Essentials/splash.jpg /d/Github/NXCFW/build/splashes/splash.jpg
+cp /d/Github/NXCFW/Essentials/splash.jpg /d/Github/NXCFW/build/Toolkit/splashes/pyra.jpg
+cp /d/Github/NXCFW/Essentials/prod.keys /d/Github/NXCFW/build/prod.keys
+cp /d/Github/NXCFW/Essentials/license.dat /d/Github/NXCFW/build/license.dat
+cp /d/Github/NXCFW/Essentials/boot.dat /d/Github/NXCFW/build/boot.dat
+cp /d/Github/NXCFW/Essentials/splash2.png /d/Github/NXCFW/build/Toolkit/splashes/pokemon.png
+cp /d/Github/NXCFW/Essentials/REICOOL.png /d/Github/NXCFW/build/Toolkit/splashes/Reicool.png
+cp /d/Github/NXCFW/Essentials/Ye.png /d/Github/NXCFW/build/Toolkit/splashes/Yeezy.png
 cp /d/Github/NXCFW/ReiNX/NX_Sysmodules/Makefile /d/Github/NXCFW/ReiNX/NX_Sysmodules/Makefile.bak
 cp /d/Github/NXCFW/ReiNX/Makefile /d/Github/NXCFW/ReiNX/Makefile.bak
 cp /d/Github/NXCFW/ReiNX/NX_Sysmodules/creport/Makefile /d/Github/NXCFW/ReiNX/NX_Sysmodules/creport/Makefile.bak
@@ -39,7 +43,7 @@ patch -p1 --binary < patch.diff
 cd /d/Github/NXCFW/ReiNX
 make
 cp /d/Github/NXCFW/ReiNX/out/ReiNX.bin /d/Github/NXCFW/build/ReiNX.bin
-cp /d/Github/NXCFW/ReiNX/out/ReiNX/splash.bin /d/Github/NXCFW/build/ReiNX/splash.bin
+cp /d/Github/NXCFW/Essentials/splash.bin /d/Github/NXCFW/build/ReiNX/splash.bin
 cp /d/Github/NXCFW/ReiNX/out/ReiNX/sysmodules/loader.kip /d/Github/NXCFW/build/ReiNX/sysmodules/loader.kip
 cp /d/Github/NXCFW/ReiNX/out/ReiNX/sysmodules/sm.kip /d/Github/NXCFW/build/ReiNX/sysmodules/sm.kip
 cp /d/Github/NXCFW/ReiNX/out/ReiNX/sysmodules/pm.kip /d/Github/NXCFW/build/ReiNX/sysmodules/pm.kip
@@ -74,10 +78,9 @@ cd /d/Github/NXCFW/Tinfoil
 make
 cp /d/Github/NXCFW/Tinfoil/Tinfoil.nro /d/Github/NXCFW/build/switch/tinfoil/tinfoil.nro
 make clean
-cd /d/Github/NXCFW/appstorenx
+cd /d/Github/NXCFW/ReiNXToolkit
 make
-cp /d/Github/NXCFW/appstorenx/appstore.nro /d/Github/NXCFW/build/switch/appstore/appstore.nro
-cp -r "/d/Github/NXCFW/appstorenx/res" /d/Github/NXCFW/build/switch/appstore
+cp /d/Github/NXCFW/ReiNXToolkit/ReiNXToolkit.nro /d/Github/NXCFW/build/switch/ReiNXToolkit/ReiNXToolkit.nro
 make clean
 cd /d/Github/NXCFW/build
 export DATE=$(date +%s | cut -c 1-8)
