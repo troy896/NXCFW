@@ -21,8 +21,6 @@ mkdir ReiNX/patches
 mkdir ReiNX/titles
 mkdir ReiNX/titles/010000000000100D
 mkdir ReiNX/titles/010000000000100D/exefs
-mkdir ReiNX/titles/0100000000000036
-mkdir ReiNX/titles/0100000000000036/exefs
 
 cp /d/Github/NXCFW/NX-Shell/NX-Shell.nro /d/Github/NXCFW/build/switch/NX-Shell/NX-Shell.nro
 cp /d/Github/NXCFW/Essentials/splash.jpg /d/Github/NXCFW/build/Toolkit/splashes/pyra.jpg
