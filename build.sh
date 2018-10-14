@@ -9,7 +9,7 @@ mkdir switch
 mkdir switch/tinfoil
 mkdir switch/NX-Shell
 mkdir switch/JKSV
-mkdir switch/ReiNXToolkit
+#mkdir switch/ReiNXToolkit
 mkdir tinfoil
 mkdir tinfoil/nsp
 mkdir Toolkit
@@ -21,6 +21,9 @@ mkdir ReiNX/patches
 mkdir ReiNX/titles
 mkdir ReiNX/titles/010000000000100D
 mkdir ReiNX/titles/010000000000100D/exefs
+mkdir ReiNX/titles/0100000000001000
+mkdir ReiNX/titles/0100000000001000/romfs
+mkdir ReiNX/titles/0100000000001000/romfs/lyt
 
 cp /d/Github/NXCFW/NX-Shell/NX-Shell.nro /d/Github/NXCFW/build/switch/NX-Shell/NX-Shell.nro
 cp /d/Github/NXCFW/Essentials/splash.jpg /d/Github/NXCFW/build/Toolkit/splashes/pyra.jpg
@@ -30,6 +33,8 @@ cp /d/Github/NXCFW/Essentials/boot.dat /d/Github/NXCFW/build/boot.dat
 cp /d/Github/NXCFW/Essentials/splash2.png /d/Github/NXCFW/build/Toolkit/splashes/pokemon.png
 cp /d/Github/NXCFW/Essentials/REICOOL.png /d/Github/NXCFW/build/Toolkit/splashes/Reicool.png
 cp /d/Github/NXCFW/Essentials/Ye.png /d/Github/NXCFW/build/Toolkit/splashes/Yeezy.png
+cp /d/Github/NXCFW/Essentials/0100000000001000/fsmitm.flag /d/Github/NXCFW/build/ReiNX/titles/0100000000001000/fsmitm.flag
+cp /d/Github/NXCFW/Essentials/0100000000001000/romfs/lyt/common.szs /d/Github/NXCFW/build/ReiNX/titles/0100000000001000/romfs/lyt/common.szs
 cd /d/Github/NXCFW/ReiNX
 make
 cp /d/Github/NXCFW/ReiNX/out/ReiNX.bin /d/Github/NXCFW/build/ReiNX.bin
@@ -58,10 +63,10 @@ cd /d/Github/NXCFW/Tinfoil
 make
 cp /d/Github/NXCFW/Tinfoil/Tinfoil.nro /d/Github/NXCFW/build/switch/tinfoil/tinfoil.nro
 make clean
-cd /d/Github/NXCFW/ReiNXToolkit
-make
-cp /d/Github/NXCFW/ReiNXToolkit/ReiNXToolkit.nro /d/Github/NXCFW/build/switch/ReiNXToolkit/ReiNXToolkit.nro
-make clean
+#cd /d/Github/NXCFW/ReiNXToolkit
+#make
+#cp /d/Github/NXCFW/ReiNXToolkit/ReiNXToolkit.nro /d/Github/NXCFW/build/switch/ReiNXToolkit/ReiNXToolkit.nro
+#make clean
 cd /d/Github/NXCFW/build
 export DATE=$(date +%s | cut -c 1-8)
 zip -r9 NXCFW-$DATE.zip .
